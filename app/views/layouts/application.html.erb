@@ -24,6 +24,14 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
            <!--  nav here -->
+           <% if logged_in? %>
+            <li>
+              <a class="navbar-brand" href="/attractions">See attractions</a>
+            </li>
+            <li>
+              <a class="navbar-brand" href="/logout">Log Out</a>
+            </li>
+            <% end %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

@@ -8,6 +8,8 @@ class CreateRides < ActiveRecord::Migration
       t.integer :min_height
       t.integer :user_id
       t.integer :attraction_id
+
+      t.timestamps null: false
     end
   end
 end

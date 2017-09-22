@@ -1,0 +1,9 @@
+<h1><%= @attraction.name %> </h1>
+
+<%= form_tag rides_path do  %>
+  <input type="hidden" name="attraction_id" value="<%= @attraction.id %>">
+  <input type="hidden" name="user_id" value="<%= session[:user_id] %>">
+  <input type="submit" value="Go on this ride">
+<% end %>
+
+<%= if current_user.admin then link_to("Edit Attraction", edit_attraction_path) end %>

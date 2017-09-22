@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %>!</p>
+<h1><%= @user.name %> Homepage</h1>
+
+<% if @user.admin %>
+  <h3>ADMIN</h3>
+<% end %>
+
+Name: <%= @user.name %><br>
+Height: <%= @user.height %><br>
+Tickets: <%= @user.tickets %><br>
+Nausea: <%= @user.nausea %><br>
+Nausea: <%= @user.happiness %><br>
+Mood: <%= @user.mood %>
+
+<div>
+  <a href="/attractions">See attractions</a>
+</div>
+<div>
+  <a href="/logout">Log Out</a>
+</div>
